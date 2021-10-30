@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+
+.row-container {
+  width: auto;
+  display: flex;
+  margin: 2em 0 2em 0;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.column-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-card {
+  background-color: rgba(93, 101, 94, 0.7);
+  border-radius: 5%;
+  margin: 10em 10em 15em 10em;
+  text-decoration: none;
+  width: auto;
+  max-width: 25em;
+  height: 20em;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-card span {
+  font-family: "UnifrakturCook";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.welcome-card button {
+  background-color: #2dc653;
+  width: 10em;
+  padding: 5px;
+  border-radius: 100px;
+  margin: 1em;
+  font-size: 15px;
+  font-family: "Uncial Antiqua", cursive;
+  cursor: pointer;
+}
+
+.welcome-card button > a {
+  text-decoration: none;
+}
+
+.welcome-card p {
+  font-size: 2em;
+  color: black;
+}
+
+.pirate-card {
+  background-color: rgba(28, 68, 129, 1);
+  border-radius: 20px;
+  width: auto;
+  height: 27em;
+  padding: 1em;
+  margin: 0em 5em 3em 5em;
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.pirate-card img {
+  border-radius: 20px;
+  width: auto;
+  height: 400px;
+}
+
+.btn {
+  background-color: #06d6a0;
+  width: 7em;
+  height: 2em;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-family: "UnifrakturCook";
+}
+
+.btn button {
+  background-color: #01c2a2;
+  width: 40px;
+  height: auto;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: "UnifrakturCook";
+}
+@media screen and (max-width: 1075px) {
+  .pirate-card {
+    margin: 0em 1em 3em 1em;
+  }
+}
+@media screen and (max-width: 875px) {
+  .row-container {
+    height: auto;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 3em 0;
+  }
+  .welcome-card {
+    height: auto;
+    margin: 0;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .welcome-card span {
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  .welcome-card button {
+    width: 120px;
+    padding: 1px;
+    height: 30px;
+    border-radius: 100px;
+    margin: 0;
+    font-size: 8px;
+    margin-top: 10px;
+  }
+
+  .welcome-card p {
+    font-size: 2em;
+  }
+
+  .column-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pirate-card {
+    border-radius: 20px;
+    width: 90%;
+    height: auto;
+    padding: 0.5em;
+    margin: 30px 0 0 0;
+  }
+
+  .pirate-card img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    width: 55%;
+    height: auto;
+    border-radius: 100px;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+}

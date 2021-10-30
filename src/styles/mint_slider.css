@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap");
+
+.Mint-Slider span {
+  font-size: 30px;
+}
+.boxbox {
+  width: 300px;
+}
+
+@media screen and (max-width: 900px) {
+  .Mint-Slider span {
+    font-size: 15px;
+  }
+  .boxbox {
+    width: 100px;
+  }
+}

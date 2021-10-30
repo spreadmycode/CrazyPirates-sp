@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+
+.Navbar {
+  width: auto;
+  height: 120px;
+  display: flex;
+  font-family: "UnifrakturCook";
+  padding-top: 5em;
+  padding-bottom: 4em;
+  justify-content: space-around;
+}
+
+.Navbar .leftSide {
+  flex: 50% 1;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar .leftSide .logo {
+  margin-left: 10em;
+  height: 6em;
+  width: auto;
+  border-radius: 50%;
+}
+
+.Navbar .leftSide .links {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.Navbar .leftSide .links a {
+  text-decoration: none;
+  color: #060606;
+  font-size: 50px;
+  margin-left: 1em;
+}
+
+.Navbar .leftSide .links a:hover {
+  color: #a23484;
+}
+
+.wallets {
+  margin: 0 10px 0 1em;
+}
+
+.wallets button {
+  font-size: 15px;
+  font-family: "Rye", cursive;
+  background-color: gold;
+  color: black;
+  text-align: center;
+
+  padding: 10px;
+  height: auto;
+  width: 160px;
+}
+
+@media screen and (max-width: 1075px) {
+  .Navbar .leftSide .links a {
+    font-size: 25px;
+  }
+  .wallets {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  .wallets button {
+    font-size: 10px;
+
+    margin: 0 15px 0 0px;
+    height: auto;
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Navbar {
+    padding-top: 3em;
+  }
+
+  .Navbar .leftSide .logo {
+    margin: 5px;
+    width: auto;
+  }
+
+  .Navbar .leftSide .links a {
+    font-size: 40px;
+    margin: 0 30px 0 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .Navbar .leftSide .links a:hover {
+    color: #a23484;
+  }
+
+  .wallets button {
+    font-size: 10px;
+
+    padding: 10px;
+    margin: 0 5px 0 0px;
+    height: 40px;
+    width: 90px;
+  }
+}
+@media screen and (max-width: 875px) {
+  .Navbar {
+    padding-top: 2em;
+  }
+
+  .Navbar .leftSide .logo {
+    margin: 0;
+    height: 2.5em;
+    width: auto;
+  }
+
+  .Navbar .leftSide .links a {
+    font-size: 15px;
+    margin: 0 0 0 15px;
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  .Navbar .leftSide .links a:hover {
+    color: #a23484;
+  }
+
+  .wallets button {
+    font-size: 7px;
+
+    padding: 0px;
+    margin: 0;
+    height: 30px;
+    width: 80px;
+  }
+}

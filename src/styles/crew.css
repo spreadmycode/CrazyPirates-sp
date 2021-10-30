@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+
+/*Titulo y frase*/
+
+.crew-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5em 5em 1em 5em;
+  padding-left: 10em;
+  padding-right: 10em;
+  overflow: hidden;
+}
+
+.crew-content img {
+  margin-top: -30px;
+}
+
+.crew-content h1 {
+  font-family: "UnifrakturCook";
+  font-size: 70px;
+  color: rgba(34, 141, 154, 1);
+}
+
+.crew-content h2 {
+  font-family: "Rye";
+  font-size: 40px;
+  display: flex;
+  text-align: center;
+  padding: 0 3em 0 3em;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  color: rgba(34, 141, 154, 1);
+}
+
+/* Crew cards */
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.crew-card {
+  margin: 2em 5em 1em 5em;
+  overflow: hidden;
+}
+.crew-card h3 {
+  display: flex;
+}
+
+.crew-card img {
+  border-radius: 20px;
+  width: auto;
+  height: 500px;
+  margin-top: -50px;
+}
+/*Responsive */
+
+@media screen and (max-width: 1300px) {
+  /*Titulo y frase*/
+  .crew-content {
+    margin: 30px 0 30px 0;
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+  .crew-content img {
+    margin-top: -15px;
+    height: auto;
+    width: 17%;
+  }
+
+  .crew-content h1 {
+    font-size: 50px;
+  }
+
+  .crew-content h2 {
+    font-size: 30px;
+    padding: 0 30px 0 30px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  /* Crew cards */
+
+  .card-container {
+    flex-direction: column;
+    margin-top: -40px;
+  }
+  .crew-card {
+    display: flex;
+    margin: 15px 25px 10px 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .crew-card img {
+    border-radius: 20px;
+    width: 50%;
+    height: auto;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /*Titulo y frase*/
+  .crew-content {
+    margin: 30px 0 30px 0;
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+  .crew-content img {
+    margin-top: -15px;
+    height: auto;
+    width: 17%;
+  }
+
+  .crew-content h1 {
+    font-size: 25px;
+  }
+
+  .crew-content h2 {
+    font-size: 13px;
+    padding: 0 30px 0 30px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  /* Crew cards */
+
+  .card-container {
+    flex-direction: column;
+    margin-top: -40px;
+  }
+  .crew-card {
+    display: flex;
+    margin: 15px 25px 10px 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .crew-card img {
+    border-radius: 20px;
+    width: 70%;
+    height: auto;
+    margin-top: 0;
+  }
+}

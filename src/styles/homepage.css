@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap");
+
+.ImageBackground {
+  background-image: url("../../public/images/Props/zxc.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  height: auto;
+  width: 100%;
+}
+.ImageBackground p {
+  margin-top: 0;
+}
+
+.LinearBackground {
+  background: linear-gradient(180deg, #146884 0%, #090909 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 600px;
+  height: auto;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.LinearBackground p {
+  margin-top: 0px;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 1300px) {
+  .ImageBackground {
+    height: auto;
+    width: -webkit-fill-available;
+  }
+
+  .LinearBackground {
+    padding-bottom: 250px;
+    height: auto;
+    width: -webkit-fill-available;
+  }
+  .LinearBackground p {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .ImageBackground {
+    height: auto;
+    width: -webkit-fill-available;
+  }
+
+  .LinearBackground {
+    padding-bottom: 150px;
+    height: auto;
+    width: -webkit-fill-available;
+  }
+  .LinearBackground p {
+    margin-top: 0px;
+  }
+}

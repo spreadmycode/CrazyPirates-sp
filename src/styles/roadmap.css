@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+.roadmap-container {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  overflow: hidden;
+}
+.roadmap-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.roadmap-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.roadmap-title h1 {
+  margin: 30px 0 30px 0;
+  font-family: "UnifrakturCook";
+  font-size: 70px;
+  color: rgba(48, 188, 197, 1);
+}
+
+.roadmap-title img {
+  display: flex;
+  align-content: center;
+  margin-top: -60px;
+  margin-bottom: -30px;
+}
+
+.roadmap-content h3 {
+  font-family: "UnifrakturCook";
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+  color: rgba(48, 188, 197, 1);
+}
+
+.roadmap-content p {
+  padding-left: 10em;
+  padding-right: 10em;
+  font-family: "Rye";
+  font-size: 15px;
+  text-align: center;
+  color: rgba(48, 188, 197, 1);
+}
+
+.image img {
+  display: flex;
+  margin-left: 1em;
+  height: 70em;
+  width: auto;
+  padding-top: 2em;
+}
+/*Responsive*/
+
+@media screen and (max-width: 1300px) {
+  .roadmap-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+    align-items: center;
+  }
+
+  .roadmap-title h1 {
+    font-size: 50px;
+  }
+
+  .roadmap-title img {
+    display: flex;
+    align-content: center;
+    margin-top: -45px;
+    margin-bottom: -10px;
+    height: auto;
+    width: 14%;
+  }
+
+  .roadmap-content {
+    margin: 4px;
+  }
+
+  .roadmap-content h3 {
+    font-size: 35px;
+    margin-top: 0px;
+  }
+
+  .roadmap-content p {
+    padding: 10px 40px 10px 40px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .image {
+    display: contents;
+    justify-content: center;
+  }
+  .image img {
+    width: 55%;
+    height: auto;
+    margin-left: 0;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .roadmap-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+    align-items: center;
+  }
+
+  .roadmap-title h1 {
+    font-size: 25px;
+  }
+
+  .roadmap-title img {
+    display: flex;
+    align-content: center;
+    margin-top: -45px;
+    margin-bottom: -10px;
+    height: auto;
+    width: 14%;
+  }
+
+  .roadmap-content {
+    margin: 4px;
+  }
+
+  .roadmap-content h3 {
+    font-size: 15px;
+    margin-top: 0px;
+  }
+
+  .roadmap-content p {
+    padding: 10px 40px 10px 40px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+  .image img {
+    width: 55%;
+    height: auto;
+    margin-left: 0;
+    padding-top: 0;
+  }
+}

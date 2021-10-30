@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+/* Container del div */
+
+.faq-container {
+  background-color: rgba(204, 194, 194, 0.05);
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  align-content: center;
+  -webkit-align-content: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  padding: 5em 20em 5em 20em;
+  overflow: hidden;
+}
+
+.faq-container h1 {
+  font-family: "UnifrakturCook";
+  font-size: 45px;
+  color: rgba(48, 188, 197, 1);
+}
+
+.faq-container img {
+  margin-top: -60px;
+  margin-bottom: 30px;
+}
+
+/* Contenido del div
+   recuadros de details */
+
+.faq-content {
+  overflow: hidden;
+}
+.faq-content h2 {
+  display: -webkit-flex;
+  font-size: 55px;
+  padding: 0 1em 0 1em;
+}
+
+.faq-content img {
+  height: 2em;
+  width: 2em;
+  display: flex;
+  display: -webkit-flex;
+  margin: 0;
+}
+
+.faq-content details > summary {
+  background-color: rgba(31, 113, 159, 1);
+  border-radius: 1em;
+  margin-bottom: 1em;
+  width: 25em;
+  height: auto;
+  font-family: "UnifrakturCook";
+  font-size: 40px;
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+}
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.safari-fix {
+  text-align: center;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+  align-content: center;
+  -webkit-align-content: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  overflow: hidden;
+}
+
+.faq-content details > span {
+  background-color: rgba(47, 92, 118, 1);
+  border-radius: 0.7em;
+  padding: 1em;
+  margin: 0em 1em 1em 2.2em;
+  width: 25em;
+  height: auto;
+  text-align: center;
+  display: -webkit-inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  color: rgba(48, 188, 197, 1);
+  font-family: "Rye";
+  font-size: 35px;
+}
+
+.arrow {
+  padding: 0.3em;
+}
+
+/* Animaciones al abrir/cerrar details */
+
+.faq-content details[open] summary ~ span {
+  animation: sweep 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: -10px;
+  }
+  100% {
+    opacity: 1;
+    transform: 0px;
+  }
+}
+
+.faq-content details[open] .arrow {
+  animation: turn 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.faq-content details .arrow {
+  animation: turn2 0.5s;
+  animation-fill-mode: both;
+}
+@keyframes turn2 {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 1300px) {
+  .faq-container {
+    padding: 30px 0 30px 0;
+  }
+
+  .faq-container h1 {
+    font-size: 50px;
+  }
+
+  .faq-container img {
+    margin-top: -20px;
+    margin-bottom: 5px;
+    height: auto;
+    width: 17%;
+  }
+
+  /* Contenido del div
+     recuadros de details */
+
+  .faq-content h2 {
+    font-size: 30px;
+    padding: 0 1em 0 1em;
+  }
+
+  .faq-content img {
+    height: 0.7em;
+    width: 0.7em;
+    margin: 0;
+  }
+
+  .faq-content details {
+    height: auto;
+    width: 40em;
+  }
+
+  .faq-content details > summary {
+    border-radius: 1em;
+    margin-bottom: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: auto;
+    height: auto;
+    font-size: auto;
+    padding: 0;
+  }
+
+  .faq-content details > span {
+    border-radius: 0.7em;
+    padding: 1em;
+    margin: 0px 60px 20px 60px;
+    width: 70%;
+    height: auto;
+    font-size: 10px;
+  }
+
+  .arrow {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .faq-container {
+    padding: 30px 0 30px 0;
+  }
+
+  .faq-container h1 {
+    font-size: 25px;
+  }
+
+  .faq-container img {
+    margin-top: -20px;
+    margin-bottom: 5px;
+    height: auto;
+    width: 17%;
+  }
+
+  /* Contenido del div
+     recuadros de details */
+
+  .faq-content h2 {
+    font-size: 15px;
+    padding: 0 1em 0 1em;
+  }
+
+  .faq-content img {
+    height: 0.7em;
+    width: 0.7em;
+    margin: 0;
+  }
+
+  .faq-content details {
+    height: auto;
+    width: auto;
+  }
+
+  .faq-content details > summary {
+    border-radius: 1em;
+    margin: 0 5px 25px 5px;
+    width: 350px;
+    height: auto;
+    font-size: auto;
+    padding: 0;
+  }
+
+  .faq-content details > span {
+    border-radius: 0.7em;
+    padding: 1em;
+    margin: 0px 60px 20px 60px;
+    width: 70%;
+    height: auto;
+    font-size: 10px;
+  }
+
+  .arrow {
+    padding: 5px;
+  }
+}
