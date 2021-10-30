@@ -1,8 +1,8 @@
-import React from "react";
-import Homepage from "./Homepage/Homepage";
+import { useMemo } from "react";
+import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import "../styles/globals.css";
 import "../styles/about.css";
-import "../styles/bubble_animation.css";
 import "../styles/crew.css";
 import "../styles/footer.css";
 import "../styles/homepage.css";
@@ -12,10 +12,6 @@ import "../styles/navbar.css";
 import "../styles/roadmap.css";
 import "../styles/scroll_top_button.css";
 import "../styles/welcome_card.css";
-
-import { useMemo } from "react";
-import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 let WALLETS: any = {
   getPhantomWallet: () => ({ name: "Phantom" }),
@@ -64,9 +60,7 @@ const App = ({ Component, pageProps }: any) => {
         <WalletProvider wallets={wallets} autoConnect>
           <WalletModalProvider featuredWallets={4}>
             <WalletBalanceProvider>
-              <React.Fragment>
-                <Homepage />
-              </React.Fragment>
+              <Component {...pageProps} />
             </WalletBalanceProvider>
           </WalletModalProvider>
         </WalletProvider>
